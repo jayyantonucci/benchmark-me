@@ -1,18 +1,20 @@
-import pygame
-from datetime import datetime
-import time
-import pygame.freetype
+import msvcrt as m
+import time, random
 
-pygame.init()
-screen = pygame.display.set_mode((420, 420))
-game_font = pygame.freetype.SysFont()
-black = (0,0,0)
-white = (255,255,255)
-green = (0,255,0)
+def wait():
+    m.getch()
 
-running = True
-while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
+print('any key to start, press enter after random delay')
+wait()
+
+print('\n...get ready...\n')
+
+time.sleep(random.randint(2,5))
+print('PRESS ENTER')
+time_start = time.time()
+input()
+time_end = time.time()
+time_react = time_end - time_start
+print('time ' + str(time_react) + ' seconds')
+
 
