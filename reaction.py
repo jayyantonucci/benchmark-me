@@ -28,5 +28,8 @@ def reaction():
     print(react_times)
     react_avg = sum(react_times)/len(react_times)
     print(f'Average time: {react_avg:.3f} seconds')
+    f = open("reaction_times.txt", "a+")
+    f.write(f'Average time: {react_avg:.3f} seconds')
+    f.close()
 
 reaction()
