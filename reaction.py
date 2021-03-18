@@ -3,6 +3,7 @@ import msvcrt as m
 import time, random
 from datetime import datetime
 
+f = open('reaction_times.txt', 'a+')
 os.system('cls')
 dateTimeObj = datetime.now()
 timestampStr = dateTimeObj.strftime('%d-%b-%Y (%H:%M:%S)')

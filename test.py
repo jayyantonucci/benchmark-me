@@ -1,2 +1,4 @@
-for i in range(3):
-    print('asas', i+1)
+1
+2
+f = open("cFile.txt", "w")
+f.write(" Created file")
