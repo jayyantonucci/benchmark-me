@@ -16,7 +16,7 @@ app.geometry('500x500')
 #functions
 def start_test():
     test_btn.place(relx=0.5, rely=0.5, anchor=CENTER)
-    time.sleep(random.randint(2,5))
+    #time.sleep(random.randint(2,5))
     #test_btn = Button(app, text='click!', width=24, height=12, bg='green')
     #test_btn.place(relx=0.5, rely=0.5, anchor=CENTER)
 
